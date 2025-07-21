@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Middleware\**" />
+    <Content Remove="Middleware\**" />
+    <EmbeddedResource Remove="Middleware\**" />
+    <None Remove="Middleware\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17" />
@@ -27,7 +34,6 @@
   <ItemGroup>
     <Folder Include="Application\DTO\Attributes\" />
     <Folder Include="Application\DTO\Common\" />
-    <Folder Include="Middleware\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Test_Azienda1",
+    "\\Test_Azienda1.Domain",
+    "\\Test_Azienda1\\Application",
+    "\\Test_Azienda1\\Application\\DTO",
+    "\\Test_Azienda1\\Application\\Mediatr",
+    "\\Test_Azienda1\\Application\\Mediatr\\Commands",
+    "\\Test_Azienda1\\Application\\Mediatr\\Queries",
+    "\\Test_Azienda1\\Controllers"
+  ],
+  "PreviewInSolutionExplorer": false
+}

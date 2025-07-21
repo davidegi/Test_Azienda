@@ -4917,11 +4917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d.giungato\\source\\repos\\Test_Azienda1\\Test_Azienda1.Domain\\Test_Azienda1.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1.Domain\\Test_Azienda1.Domain.csproj",
       "projectName": "Test_Azienda1.Domain",
-      "projectPath": "C:\\Users\\d.giungato\\source\\repos\\Test_Azienda1\\Test_Azienda1.Domain\\Test_Azienda1.Domain.csproj",
+      "projectPath": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1.Domain\\Test_Azienda1.Domain.csproj",
       "packagesPath": "C:\\Users\\d.giungato\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\d.giungato\\source\\repos\\Test_Azienda1\\Test_Azienda1.Domain\\obj\\",
+      "outputPath": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
