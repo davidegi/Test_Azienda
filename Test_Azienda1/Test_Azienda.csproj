@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Test_Azienda1.Domain\Test_Azienda1.Domain.csproj" />
+    <ProjectReference Include="..\Test_Azienda1.Domain\Test_Azienda.Domain.csproj" />
   </ItemGroup>
 
 </Project>

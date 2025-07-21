@@ -1710,7 +1710,7 @@
           }
         }
       },
-      "Test_Azienda1.Domain/1.0.0": {
+      "Test_Azienda.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1721,10 +1721,10 @@
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "compile": {
-          "bin/placeholder/Test_Azienda1.Domain.dll": {}
+          "bin/placeholder/Test_Azienda.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Test_Azienda1.Domain.dll": {}
+          "bin/placeholder/Test_Azienda.Domain.dll": {}
         }
       }
     }
@@ -5019,10 +5019,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Test_Azienda1.Domain/1.0.0": {
+    "Test_Azienda.Domain/1.0.0": {
       "type": "project",
-      "path": "../Test_Azienda1.Domain/Test_Azienda1.Domain.csproj",
-      "msbuildProject": "../Test_Azienda1.Domain/Test_Azienda1.Domain.csproj"
+      "path": "../Test_Azienda1.Domain/Test_Azienda.Domain.csproj",
+      "msbuildProject": "../Test_Azienda1.Domain/Test_Azienda.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5036,7 +5036,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.6",
       "Newtonsoft.Json >= 13.0.3",
       "Swashbuckle.AspNetCore >= 6.6.2",
-      "Test_Azienda1.Domain >= 1.0.0"
+      "Test_Azienda.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5046,9 +5046,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1\\Test_Azienda1.csproj",
-      "projectName": "Test_Azienda1",
-      "projectPath": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1\\Test_Azienda1.csproj",
+      "projectUniqueName": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1\\Test_Azienda.csproj",
+      "projectName": "Test_Azienda",
+      "projectPath": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1\\Test_Azienda.csproj",
       "packagesPath": "C:\\Users\\d.giungato\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1\\obj\\",
       "projectStyle": "PackageReference",
@@ -5071,8 +5071,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1.Domain\\Test_Azienda1.Domain.csproj": {
-              "projectPath": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1.Domain\\Test_Azienda1.Domain.csproj"
+            "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1.Domain\\Test_Azienda.Domain.csproj": {
+              "projectPath": "C:\\Users\\d.giungato\\source\\repos\\TestAziendaNew\\Test_Azienda1.Domain\\Test_Azienda.Domain.csproj"
             }
           }
         }
