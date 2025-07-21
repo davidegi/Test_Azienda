@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Test_Azienda1.Domain.Table;
+namespace Test_Azienda.Domain.Table;
 public partial class DipendenteAnagrafica
 {
     public int IDDipendenteAnag { get; set; }

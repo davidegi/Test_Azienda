@@ -1,10 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Test_Azienda1.Application.DTO;
-using Test_Azienda1.Domain.Table;
-using Test_Azienda1.Utilities.Services;
-using Mapper = Test_Azienda1.Application.Mapper.Profiles.Mapper;
+using Test_Azienda.Application.DTO;
+using Test_Azienda.Domain.Table;
+using Test_Azienda.Utilities.Services;
+using Mapper = Test_Azienda.Application.Mapper.Profiles.Mapper;
 
 [ApiController]
 [Route("api/[controller]")]

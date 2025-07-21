@@ -1,4 +1,4 @@
-﻿namespace Test_Azienda1.Domain.Table;
+﻿namespace Test_Azienda.Domain.Table;
 
 public partial class Azienda
 {

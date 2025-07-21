@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Test_Azienda1.Application.DTO
+namespace Test_Azienda.Application.DTO
 {
     public class DipendenteAnagraficaDto
     {

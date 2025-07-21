@@ -1,10 +1,11 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Test_Azienda1.Application.DTO;
-using Test_Azienda1.Domain.Table;
-using Test_Azienda1.Utilities.Helpers;
+using Test_Azienda.Application.Mapper.Profiles;
+using Test_Azienda.Application.DTO;
+using Test_Azienda.Domain.Table;
+using Test_Azienda.Utilities.Helpers;
 
-namespace Test_Azienda1.Application.Mediatr.Queries
+namespace Test_Azienda.Application.Mediatr.Queries
 {
     public record GetDipendenteQuery : IRequest<DipendenteDto>
     {
@@ -35,7 +36,7 @@ namespace Test_Azienda1.Application.Mediatr.Queries
                     .Where(x => x.IDDipendente == request.Id)
                     .FirstOrDefaultAsync();
 
-                DipendenteDto dipendenteDto = Mapper.Profiles.Mapper.Map<DipendenteDto>(dipendente);
+                DipendenteDto dipendenteDto = Mapper.Map<DipendenteDto>(dipendente);
 
                 if (dipendenteDto == null)
                 {

@@ -1,10 +1,10 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Test_Azienda1.Application.DTO;
+using Test_Azienda.Application.DTO;
 using Test_Azienda1.Domain.Table;
 using Test_Azienda1.Utilities.Helpers;
 
-namespace Test_Azienda1.Application.Mediatr.Commands
+namespace Test_Azienda.Application.Mediatr.Commands
 {
     public record AziendaDeleteCommand(AziendaDto AziendaDelete) : IRequest<string>;
     public class AziendaDeleteCommandHandler : IRequestHandler<AziendaDeleteCommand, string>

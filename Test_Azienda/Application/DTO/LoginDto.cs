@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Test_Azienda1.Application.DTO
+namespace Test_Azienda.Application.DTO
 {
     public class LoginRequestDto
     {

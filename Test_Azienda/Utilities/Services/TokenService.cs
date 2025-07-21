@@ -4,9 +4,9 @@ using System.Reflection;
 using System.Security.Claims;
 using System.Text;
 using Newtonsoft.Json;
-using Test_Azienda1.Application.DTO;
+using Test_Azienda.Application.DTO;
 
-namespace Test_Azienda1.Utilities.Services
+namespace Test_Azienda.Utilities.Services
 {
         /// <summary>
         /// Classe che governa tutte le funzionalità relative alla gestione dei token JWT

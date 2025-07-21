@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
-using Test_Azienda1.Application.DTO;
-using Test_Azienda1.Application.Mediatr.Commands;
-using Test_Azienda1.Application.Mediatr.Queries;
+using Test_Azienda.Application.DTO;
+using Test_Azienda.Application.Mediatr.Commands;
+using Test_Azienda.Application.Mediatr.Queries;
 
 namespace Test_Azienda1.Controllers
 {

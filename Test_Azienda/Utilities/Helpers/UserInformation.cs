@@ -1,4 +1,4 @@
-﻿namespace Test_Azienda1.Utilities.Helpers
+﻿namespace Test_Azienda.Utilities.Helpers
 {
     public class UserInformation
     {

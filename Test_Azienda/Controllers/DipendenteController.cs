@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Test_Azienda1.Application.Mediatr.Queries;
+using Test_Azienda.Application.Mediatr.Queries;
 
 namespace Test_Azienda1.Controllers
 {

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Test_Azienda1.Application.DTO;
+using Test_Azienda.Application.DTO;
 using Test_Azienda1.Domain.Table;
 
-namespace Test_Azienda1.Application.Mapper.Profiles
+namespace Test_Azienda.Application.Mapper.Profiles
 {
     // Classe per la gestione delle entità tra i DTO e il DB
     public class Mapper

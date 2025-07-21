@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
-using Test_Azienda1.Domain.Table;
-using Test_Azienda1.Utilities.Helpers;
-using Test_Azienda1.Utilities.Services;
+using Test_Azienda.Domain.Table;
+using Test_Azienda.Utilities.Helpers;
+using Test_Azienda.Utilities.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 var assembly = Assembly.GetExecutingAssembly();

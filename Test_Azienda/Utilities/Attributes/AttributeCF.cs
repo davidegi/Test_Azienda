@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
-namespace Test_Azienda1.Utilities.Attributes
+namespace Test_Azienda.Utilities.Attributes
 {
     public class AttributeCF : ValidationAttribute
     {

@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
+using Test_Azienda.Utilities.Attributes;
 using Test_Azienda1.Utilities.Attributes;
 
-namespace Test_Azienda1.Application.DTO
+namespace Test_Azienda.Application.DTO
 {
     public class UtenteDto
     {
