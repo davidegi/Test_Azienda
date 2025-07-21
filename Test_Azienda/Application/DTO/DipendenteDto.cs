@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Test_Azienda1.Utilities.Attributes;
+using Test_Azienda.Utilities.Attributes;
 
 namespace Test_Azienda.Application.DTO
 {

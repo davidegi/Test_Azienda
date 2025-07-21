@@ -1,7 +1,7 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Test_Azienda.Application.DTO;
-using Test_Azienda.Application.Mapper.Profiles;
 using Test_Azienda.Domain.Table;
 using Test_Azienda.Utilities.Helpers;
 
@@ -19,12 +19,14 @@ namespace Test_Azienda.Application.Mediatr.Queries
     public class GetUtenteQueryHandler : IRequestHandler<GetUtenteQuery, UtenteDto>
     {
         private readonly MyDbContext _context;
-        private readonly UserInformation userInformation;
+        private readonly UserInformation _userInformation;
+        private readonly IMapper _mapper;
 
-        public GetUtenteQueryHandler(MyDbContext context, UserInformation userInformation)
+        public GetUtenteQueryHandler(MyDbContext context, UserInformation userInformation, IMapper mapper)
         {
             _context = context;
-            this.userInformation = userInformation;
+            _userInformation = userInformation;
+            _mapper = mapper;
         }
 
         public async Task<UtenteDto> Handle (GetUtenteQuery request, CancellationToken cancellationToken)
@@ -34,7 +36,7 @@ namespace Test_Azienda.Application.Mediatr.Queries
                 var utente = await _context.Utente
                     .Where(x => x.IDUtente == request.Id)
                     .FirstOrDefaultAsync();
-                UtenteDto utenteDto = Mapper.Map<UtenteDto>(utente);
+                UtenteDto utenteDto = _mapper.Map<UtenteDto>(utente);
 
                 if (utenteDto == null)
                 {

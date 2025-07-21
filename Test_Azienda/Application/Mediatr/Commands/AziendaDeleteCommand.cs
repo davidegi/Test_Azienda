@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Test_Azienda.Application.DTO;
-using Test_Azienda1.Domain.Table;
-using Test_Azienda1.Utilities.Helpers;
+using Test_Azienda.Domain.Table;
+using Test_Azienda.Utilities.Helpers;
 
 namespace Test_Azienda.Application.Mediatr.Commands
 {

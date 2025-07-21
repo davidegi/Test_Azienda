@@ -4,6 +4,7 @@ using Test_Azienda.Application.Mapper.Profiles;
 using Test_Azienda.Application.DTO;
 using Test_Azienda.Domain.Table;
 using Test_Azienda.Utilities.Helpers;
+using AutoMapper;
 
 namespace Test_Azienda.Application.Mediatr.Queries
 {
@@ -18,13 +19,15 @@ namespace Test_Azienda.Application.Mediatr.Queries
 
     public class GetAziendaQueryHandler : IRequestHandler<GetAziendaQuery, AziendaDto>
     {
-        private readonly UserInformation userInformation;
+        private readonly UserInformation _userInformation;
         private readonly MyDbContext _myDbContext;
+        private readonly IMapper _mapper;
 
-        public GetAziendaQueryHandler(UserInformation userInformation, MyDbContext myDbContext)
+        public GetAziendaQueryHandler(UserInformation userInformation, MyDbContext myDbContext, IMapper mapper)
         {
             _myDbContext = myDbContext;
-            this.userInformation = userInformation; 
+            _userInformation = userInformation;
+            _mapper = mapper;
         }
 
         public async Task<AziendaDto> Handle(GetAziendaQuery request, CancellationToken cancellationToken)
@@ -35,7 +38,7 @@ namespace Test_Azienda.Application.Mediatr.Queries
                     .Where(x => x.IDAzienda == request.Id)
                     .FirstOrDefaultAsync(cancellationToken);
 
-                AziendaDto aziendaDto = Mapper.Map<AziendaDto>(azienda);
+                AziendaDto aziendaDto = _mapper.Map<AziendaDto>(azienda);
 
                 if (aziendaDto == null)
                 {

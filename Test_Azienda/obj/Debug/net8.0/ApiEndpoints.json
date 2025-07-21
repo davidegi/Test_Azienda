@@ -20,7 +20,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Test_Azienda1.Application.DTO.LoginResponseDto",
+        "Type": "Test_Azienda.Application.DTO.LoginResponseDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -40,7 +40,7 @@
     "Parameters": [
       {
         "Name": "aziendaDelete",
-        "Type": "Test_Azienda1.Application.DTO.AziendaDto",
+        "Type": "Test_Azienda.Application.DTO.AziendaDto",
         "IsRequired": true
       }
     ],
@@ -86,7 +86,7 @@
     "Parameters": [
       {
         "Name": "aziendaInsert",
-        "Type": "Test_Azienda1.Application.DTO.AziendaDto",
+        "Type": "Test_Azienda.Application.DTO.AziendaDto",
         "IsRequired": true
       }
     ],
@@ -109,7 +109,7 @@
     "Parameters": [
       {
         "Name": "aziendaUpdate",
-        "Type": "Test_Azienda1.Application.DTO.AziendaDto",
+        "Type": "Test_Azienda.Application.DTO.AziendaDto",
         "IsRequired": true
       }
     ],
@@ -189,13 +189,13 @@
     "Parameters": [
       {
         "Name": "deleteUtente",
-        "Type": "Test_Azienda1.Application.DTO.UtenteDeleteDto",
+        "Type": "Test_Azienda.Application.DTO.UtenteDeleteDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Test_Azienda1.Application.DTO.UtenteDto",
+        "Type": "Test_Azienda.Application.DTO.UtenteDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -236,7 +236,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Test_Azienda1.Application.DTO.UtenteDto",
+        "Type": "Test_Azienda.Application.DTO.UtenteDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -271,13 +271,13 @@
     "Parameters": [
       {
         "Name": "insertUtente",
-        "Type": "Test_Azienda1.Application.DTO.UtenteDto",
+        "Type": "Test_Azienda.Application.DTO.UtenteDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Test_Azienda1.Application.DTO.UtenteDto",
+        "Type": "Test_Azienda.Application.DTO.UtenteDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

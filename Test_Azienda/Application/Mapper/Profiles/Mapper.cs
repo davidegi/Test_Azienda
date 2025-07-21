@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Test_Azienda.Application.DTO;
-using Test_Azienda1.Domain.Table;
+using Test_Azienda.Domain.Table;
 
 namespace Test_Azienda.Application.Mapper.Profiles
 {

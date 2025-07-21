@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Test_Azienda.Application.Mapper.Profiles;
 using Test_Azienda.Application.DTO;
 using Test_Azienda.Domain.Table;
 using Test_Azienda.Utilities.Helpers;
+using AutoMapper;
 
 namespace Test_Azienda.Application.Mediatr.Queries
 {
@@ -20,12 +20,14 @@ namespace Test_Azienda.Application.Mediatr.Queries
     {
         private readonly UserInformation _userInformation;
         private readonly MyDbContext _myDbContext;
+        private readonly IMapper _mapper;
 
 
-        public GetDipendenteQHandler(UserInformation userInformation, MyDbContext myDbContext)
+        public GetDipendenteQHandler(UserInformation userInformation, MyDbContext myDbContext, IMapper mapper)
         {
             _myDbContext = myDbContext;
-            this._userInformation = userInformation;
+            _userInformation = userInformation;
+            _mapper = mapper;
         }
 
         public async Task<DipendenteDto> Handle(GetDipendenteQuery request, CancellationToken cancellationToken)
@@ -36,7 +38,7 @@ namespace Test_Azienda.Application.Mediatr.Queries
                     .Where(x => x.IDDipendente == request.Id)
                     .FirstOrDefaultAsync();
 
-                DipendenteDto dipendenteDto = Mapper.Map<DipendenteDto>(dipendente);
+                DipendenteDto dipendenteDto = _mapper.Map<DipendenteDto>(dipendente);
 
                 if (dipendenteDto == null)
                 {
