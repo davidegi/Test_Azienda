@@ -5,7 +5,6 @@ namespace Test_Azienda1.Application.DTO
 {
     public class DipendenteAnagraficaDto
     {
-
         [Required]
         public int IDDipendenteAnag { get; set; }
 

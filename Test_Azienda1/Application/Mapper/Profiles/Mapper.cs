@@ -7,8 +7,8 @@ namespace Test_Azienda1.Application.Mapper.Profiles
     // Classe per la gestione delle entità tra i DTO e il DB
     public class Mapper
     {
-        private static MapperConfiguration mapConfiguration;
-        private static IMapper mapper;
+        private static MapperConfiguration? mapConfiguration;
+        private static IMapper? mapper;
 
 
         // Imposta la configurazione del mapper
@@ -84,6 +84,7 @@ namespace Test_Azienda1.Application.Mapper.Profiles
             public ProfiloAzienda()
             {
                 CreateMap<Azienda, AziendaDto>();
+                CreateMap<AziendaDto, Azienda>();
                 CreateMap<Ruolo, RuoloDto>();
             }
         }
@@ -95,6 +96,7 @@ namespace Test_Azienda1.Application.Mapper.Profiles
                 CreateMap<Dipendente, DipendenteDto>();
                 CreateMap<DipendenteAnagrafica, DipendenteAnagraficaDto>();
                 CreateMap<Utente, UtenteDto>();
+                CreateMap<UtenteDto, Utente>();
             }
         }
     }

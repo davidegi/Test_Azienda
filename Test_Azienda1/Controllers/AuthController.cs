@@ -22,14 +22,13 @@ public class AuthController : ControllerBase
     [HttpGet("login")]
     public async Task<LoginResponseDto> Login([FromQuery] LoginRequestDto loginDto)
     {
-        LoginResponseDto loginResponse = new LoginResponseDto();
+        LoginResponseDto loginResponse = new();
 
         try
         {
             var utente = await _context.Utente.FirstOrDefaultAsync(u => u.Username == loginDto.Username);
 
             if (utente != null)
-
                 if (utente.Password == loginDto.Password)
                 {
                     // mapper
@@ -64,7 +63,6 @@ public class AuthController : ControllerBase
                     Success = false,
                     Message = "Utente non trovato"
                 };
-
         }
         catch (Exception)
         {

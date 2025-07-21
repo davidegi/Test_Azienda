@@ -11,7 +11,7 @@ namespace Test_Azienda1.Utilities.Attributes
         {
             if (value == null) // L'obbligatorietà è gestita con [Required]
                 return ValidationResult.Success;
-            if (!(value is string iva))
+            if (value is not string iva)
                 return new ValidationResult("La partita IVA è obbligatoria.");
             if (!Regex.IsMatch(iva, Pattern_IVA))
                 return new ValidationResult("partita IVA non valida");

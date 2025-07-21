@@ -9,6 +9,7 @@ namespace Test_Azienda1.Application.DTO
 
         [Required]
         public string? Tipo { get; set; }
+
         public string? Descrizione { get; set; }
     }
 }

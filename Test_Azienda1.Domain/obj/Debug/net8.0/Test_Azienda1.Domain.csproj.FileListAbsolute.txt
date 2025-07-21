@@ -1,0 +1,14 @@
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\bin\Debug\net8.0\Test_Azienda1.Domain.deps.json
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\bin\Debug\net8.0\Test_Azienda1.Domain.runtimeconfig.json
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\bin\Debug\net8.0\Test_Azienda1.Domain.dll
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\bin\Debug\net8.0\Test_Azienda1.Domain.pdb
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.csproj.AssemblyReference.cache
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.AssemblyInfoInputs.cache
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.AssemblyInfo.cs
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.csproj.CoreCompileInputs.cache
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.dll
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\refint\Test_Azienda1.Domain.dll
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.pdb
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\Test_Azienda1.Domain.genruntimeconfig.cache
+C:\Users\d.giungato\source\repos\Test_Azienda1\Test_Azienda1.Domain\obj\Debug\net8.0\ref\Test_Azienda1.Domain.dll

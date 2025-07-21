@@ -1,8 +1,13 @@
-﻿namespace Test_Azienda1.Application.DTO
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Test_Azienda1.Application.DTO
 {
     public class LoginRequestDto
     {
+        [Required]
         public string Username { get; set; }
+
+        [Required]
         public string Password { get; set; }
     }
     public class LoginResponseDto

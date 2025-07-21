@@ -11,7 +11,7 @@ namespace Test_Azienda1.Utilities.Attributes
         {
             if (value == null) // L'obbligatorietà è gestita con [Required]
                 return ValidationResult.Success;
-            if (!(value is string codiceFiscale))
+            if (value is not string codiceFiscale)
                 return new ValidationResult("Il codice fiscale è obbligatorio.");
             if (!Regex.IsMatch(codiceFiscale, Pattern_CodiceFiscale))
                 return new ValidationResult("Il codice fiscale deve essere composto da 16 valori.");

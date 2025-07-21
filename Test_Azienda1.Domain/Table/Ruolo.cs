@@ -1,5 +1,4 @@
-﻿
-namespace Test_Azienda1.Domain.Table;
+﻿namespace Test_Azienda1.Domain.Table;
 public partial class Ruolo
 {
     public Ruolo() { 

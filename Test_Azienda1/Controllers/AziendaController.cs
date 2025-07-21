@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Formatters;
 using System.Net.Mime;
 using Test_Azienda1.Application.DTO;
 using Test_Azienda1.Application.Mediatr.Commands;
@@ -31,7 +30,7 @@ namespace Test_Azienda1.Controllers
         {
             try
             {
-                GetAziendaQuery query = new GetAziendaQuery(id);
+                GetAziendaQuery query = new(id);
                 var result = await _mediator.Send(query);
 
                 if (result == null)
@@ -52,15 +51,15 @@ namespace Test_Azienda1.Controllers
         {
             try
             {
-                AziendaInsertCommand query = new AziendaInsertCommand(aziendaInsert);
+                AziendaInsertCommand query = new(aziendaInsert);
                 var result = await _mediator.Send(query);
                 var errorMessages = ("operazione completata con risultato: {result}", result);
                 return Ok(result);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                var errorMessages = (e, "Errore generico durante l'inserimento dell'azienda");
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+                var errorMessages = ("Errore generico durante l'inserimento dell'azienda");
+                return StatusCode(StatusCodes.Status500InternalServerError, errorMessages);
             }
         }
 
@@ -74,14 +73,36 @@ namespace Test_Azienda1.Controllers
         {
             try
             {
-                AziendaDeleteCommand deleteQuery = new AziendaDeleteCommand(aziendaDelete);
+                AziendaDeleteCommand deleteQuery = new(aziendaDelete);
                 var deleteResult = await _mediator.Send(deleteQuery);
                 return Ok(deleteResult);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                var errorMessages = (e, "Errore generico durante la cancellazione dell'azienda");
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+                var errorMessages = ("Errore generico durante la cancellazione dell'azienda");
+                return StatusCode(StatusCodes.Status500InternalServerError, errorMessages);
+            }
+        }
+
+        [Consumes(MediaTypeNames.Application.Json)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPost(Name = "AziendaUpdate")]
+
+        public async Task<IActionResult> AziendaUpdate([FromBody] AziendaDto aziendaUpdate)
+        {
+            try
+            {
+                AziendaUpdateCommand updateQuery = new(aziendaUpdate);
+                var updateResult = await _mediator.Send(updateQuery);
+                return Ok(updateResult);
+            }
+            catch (Exception)
+            {
+                var errorMessages = ("Errore generico durante la modifica di una azienda");
+                return StatusCode(StatusCodes.Status500InternalServerError, errorMessages);
             }
         }
     }

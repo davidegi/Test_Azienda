@@ -12,7 +12,7 @@ namespace Test_Azienda1.Application.Mediatr.Queries
         {
             Id = id;
         }
-        public int Id { get; set; }  
+        public int Id { get; set; } 
     }
 
     public class GetAziendaQueryHandler : IRequestHandler<GetAziendaQuery, AziendaDto>
@@ -32,20 +32,20 @@ namespace Test_Azienda1.Application.Mediatr.Queries
             {
                 var azienda = await _myDbContext.Azienda
                     .Where(x => x.IDAzienda == request.Id)
-                    .FirstOrDefaultAsync();
+                    .FirstOrDefaultAsync(cancellationToken);
 
                 AziendaDto aziendaDto = Mapper.Profiles.Mapper.Map<AziendaDto>(azienda);
 
                 if (aziendaDto == null)
                 {
-                    var messaggio1 = ($"Azienda con Id {request.Id} non trovata", request.Id);
+                    var errorMessage = ($"Azienda con Id {request.Id} non trovata", request.Id);
                     return null;
                 }
                 return aziendaDto;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                var messaggio2 = (ex, $"Errore durante il recupero dell'azienda con Id {request.Id}", request.Id);
+                var errorMessage = ($"Errore durante il recupero dell'azienda con Id {request.Id}", request.Id);
                 throw;
             } 
         }
