@@ -30,4 +30,18 @@ namespace Test_Azienda.Application.DTO
 
         public DateTime? DataCancellazione { get; set; }
     }
+
+    public class UtenteUpdateDto
+    {
+        [Required]
+        public int IDUtente { get; set; }
+        public string? Username { get; set; }
+
+        //[AttributeEmail(ErrorMessage = "Email non valida")]
+        public string? Email { get; set; }
+
+        //[AttributePassword(ErrorMessage = "Password non valida")]
+        //[JsonIgnore]
+        public string? Password { get; set; }
+    }
 }

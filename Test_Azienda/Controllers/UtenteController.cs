@@ -79,8 +79,29 @@ namespace Test_Azienda1.Controllers
             }
             catch (Exception)
             {
-                var errorMessages = ("Errore generico durante la cancellazione dell'utente");
+                var errorMessages = "Errore generico durante la cancellazione dell'utente";
                 return StatusCode(StatusCodes.Status500InternalServerError, errorMessages);
+            }
+        }
+
+        [Consumes(MediaTypeNames.Application.Json)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UtenteDto))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [HttpPost(Name = "UpdateUtente")]
+
+        public async Task<IActionResult> UpdateUtente([FromBody] UtenteUpdateDto updateUtente)
+        {
+            try
+            {
+                UtenteUpdateCommand updateQuery = new(updateUtente);
+                var updateResult = await _mediator.Send(updateQuery);
+                return Ok(updateResult);
+            }
+            catch (Exception)
+            {
+                var errorMessage = "Errore generico durante l'aggiornamento dell'utente";
+                return StatusCode(StatusCodes.Status500InternalServerError, errorMessage);
             }
         }
     }

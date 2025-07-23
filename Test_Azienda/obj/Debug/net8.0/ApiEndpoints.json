@@ -301,5 +301,46 @@
       }
     ],
     "EndpointName": "InsertUtente"
+  },
+  {
+    "ContainingType": "Test_Azienda1.Controllers.UtenteController",
+    "Method": "UpdateUtente",
+    "RelativePath": "api/Utente/UpdateUtente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateUtente",
+        "Type": "Test_Azienda.Application.DTO.UtenteUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Test_Azienda.Application.DTO.UtenteDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "UpdateUtente"
   }
 ]

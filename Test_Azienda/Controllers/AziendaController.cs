@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
 using Test_Azienda.Application.Mediatr.Commands;
 using Test_Azienda.Application.DTO;
-using Test_Azienda.Application.Mediatr.Commands;
 using Test_Azienda.Application.Mediatr.Queries;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 
@@ -102,7 +101,7 @@ namespace Test_Azienda1.Controllers
             }
             catch (Exception)
             {
-                var errorMessages = ("Errore generico durante la modifica di una azienda");
+                var errorMessages = "Errore generico durante la modifica di una azienda";
                 return StatusCode(StatusCodes.Status500InternalServerError, errorMessages);
             }
         }

@@ -95,8 +95,19 @@ namespace Test_Azienda.Application.Mapper.Profiles
             {
                 CreateMap<Dipendente, DipendenteDto>();
                 CreateMap<DipendenteAnagrafica, DipendenteAnagraficaDto>();
+            }
+        }
+
+        public class ProfiloUtente : Profile
+        {
+            public ProfiloUtente()
+            {
                 CreateMap<Utente, UtenteDto>();
                 CreateMap<UtenteDto, Utente>();
+                CreateMap<Utente, UtenteUpdateDto>()
+                    .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+                CreateMap<UtenteUpdateDto, Utente>()
+                    .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
             }
         }
     }
